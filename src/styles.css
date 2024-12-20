@@ -1,1 +1,85 @@
 /* You can add global styles to this file, and also import other style files */
+/* Основні стилі */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    background: #333;
+    padding: 10px 0;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+nav a:hover {
+    background: #4CAF50;
+}
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #e9f7ef;
+}
+.hero h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: #333;
+}
+.search-bar {
+    margin-top: 20px;
+}
+.search-bar input, .search-bar button {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.search-bar button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.recommendations {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: 10px;
+    width: 300px;
+    text-align: center;
+    overflow: hidden;
+}
+.card img {
+    width: 100%;
+    height: 180px;
+}
+.card h3 {
+    margin: 10px 0;
+}
+.card p {
+    color: #555;
+}
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}

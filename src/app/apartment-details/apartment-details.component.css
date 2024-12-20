@@ -1,0 +1,59 @@
+.details-container {
+    max-width: 800px;
+    margin: 30px auto;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+}
+.details-container img {
+    width: 100%; /* Ширина фото */
+    max-width: 800px; /* Обмеження ширини */
+    height: 400px; /* Фіксована висота */
+    object-fit: cover; /* Обрізає фото, зберігаючи пропорції */
+    border-radius: 10px; /* Згладжування країв */
+}
+h2 {
+    color: #333;
+    margin-top: 20px;
+}
+.details-container p {
+    color: #555;
+    line-height: 1.5;
+}
+.info-list {
+    margin-top: 20px;
+    list-style: none;
+    padding: 0;
+}
+.info-list li {
+    margin: 10px 0;
+    color: #333;
+}
+.info-list strong {
+    color: #4CAF50;
+}
+button {
+    background-color: #4CAF50; /* Зелений фон */
+    color: white; /* Білий текст */
+    border: none; /* Без рамки */
+    border-radius: 5px; /* Закруглені кути */
+    padding: 10px 20px; /* Відступи */
+    font-size: 1rem; /* Розмір шрифту */
+    cursor: pointer; /* Змінюємо курсор */
+    transition: background-color 0.3s ease; /* Анімація */
+  }
+  
+  button:hover {
+    background-color: #45a049; /* Темніший зелений при наведенні */
+  }
+  
+  button:active {
+    background-color: #3e8e41; /* Темний зелений при натисканні */
+  }
+  
+  button:focus {
+    outline: 2px solid #85e085; /* Рамка при фокусі */
+    outline-offset: 2px; /* Відступ рамки */
+  }

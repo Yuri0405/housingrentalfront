@@ -1,0 +1,9 @@
+<section class="recommendations">
+    <div class="card" *ngFor="let apartment of apartments">
+        <a [routerLink] = "['/apartment', apartment.id]">
+            <img [src]="apartment.image" [alt]="apartment.name">
+            <h3>{{ apartment.name }}</h3>
+            <p>Ціна: {{ apartment.price }} грн/міс</p>
+        </a>
+    </div>
+</section>

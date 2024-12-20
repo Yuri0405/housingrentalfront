@@ -1,13 +1,25 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { HeaderComponent } from './header/header.component';
+import { NavigationComponent } from './navigation/navigation.component';
+import { HeroComponent } from './hero/hero.component';
+import { RecomendationsComponent } from './recomendations/recomendations.component';
+import { FooterComponent } from './footer/footer.component';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet],
+  standalone: true, // Зазначаємо, що компонент standalone
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css'],
+  imports: [
+    HeaderComponent,
+    NavigationComponent,
+    RouterModule,
+    HeroComponent,
+    RecomendationsComponent,
+    FooterComponent
+  ]
 })
 export class AppComponent {
-  title = 'apartment-rent-front';
+  title = 'EasyRent';
 }

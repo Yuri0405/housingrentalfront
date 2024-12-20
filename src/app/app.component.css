@@ -1,0 +1,17 @@
+.apartment-card {
+    width: 500px;
+    height: 150px; /* Adjust height as needed */
+    border: 5px solid black;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px 0; /* Add vertical spacing between cards */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better visual effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+  }
+  
+  /* Hover effect */
+  .apartment-card:hover {
+    transform: scale(1.05); /* Slightly enlarge the card */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Increase shadow for depth effect */
+    background-color: #f9f9f9; /* Optional: Change background color on hover */
+  }
