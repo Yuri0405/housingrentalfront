@@ -1,0 +1,35 @@
+.confirmation {
+  display: flex; /* Включаємо гнучке розташування елементів */
+  flex-direction: column; /* Встановлюємо вертикальне розташування елементів */
+  justify-content: center; /* Центруємо по вертикалі */
+  align-items: center; /* Центруємо по горизонталі */
+  height: calc(100vh - 100px); /* Висота, що враховує шапку і футер (припустимо, шапка та футер ~100px) */
+  text-align: center; /* Текст по центру */
+  padding: 20px;
+  background-color: #f8f9fa; /* Світлий фон для компонента */
+}
+
+.confirmation h1 {
+  color: #4CAF50; /* Зелений колір тексту */
+  margin-bottom: 20px;
+}
+
+.confirmation p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.confirmation a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.confirmation a:hover {
+  background-color: #45a049;
+}

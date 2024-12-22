@@ -1,7 +1,7 @@
 <!-- Форма бронювання -->
 <div class="booking-container">
     <h2>Бронювання квартири</h2>
-    <form>
+    <form (ngSubmit)="onSubmit()">
         <label for="apartment-name">Назва квартири</label>
         <input type="text" id="apartment-name" value="2-кімнатна квартира" readonly>
 

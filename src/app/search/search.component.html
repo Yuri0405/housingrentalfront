@@ -1,1 +1,35 @@
-<p>search works!</p>
+<div class="filters">
+    <select [(ngModel)]="selectedCity">
+      <option value="">Виберіть місто</option>
+      <option *ngFor="let city of cities">{{ city }}</option>
+    </select>
+    <input
+      type="number"
+      placeholder="Мінімальна ціна"
+      [(ngModel)]="minPrice"
+    />
+    <input
+      type="number"
+      placeholder="Максимальна ціна"
+      [(ngModel)]="maxPrice"
+    />
+    <input
+      type="number"
+      placeholder="Кількість кімнат"
+      [(ngModel)]="rooms"
+    />
+    <button (click)="applyFilters()">Застосувати фільтри</button>
+  </div>
+  
+  <section class="results">
+    <div *ngIf="filteredApartments.length === 0">
+      <p>Квартири не знайдено за вашим запитом.</p>
+    </div>
+    <div *ngFor="let apartment of filteredApartments" class="card">
+      <img [src]="apartment.imageUrl" [alt]="apartment.name" />
+      <a [routerLink]="['/apartment', apartment.id]" class="details-button">
+        <h3>{{ apartment.name }}</h3>
+        <p>Ціна: {{ apartment.price }} грн/міс</p>
+      </a>
+    </div>
+  </section>

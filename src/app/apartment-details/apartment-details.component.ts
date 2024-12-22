@@ -11,12 +11,12 @@ import { RouterModule } from '@angular/router';
 })
 export class ApartmentDetailsComponent implements OnInit {
 
-  apartmentId: number | null = null;
+  apartmentId: string | null = null;
 
   constructor (private route: ActivatedRoute) {}
 
   ngOnInit(): void {
-      this.apartmentId = Number(this.route.snapshot.paramMap.get('id'))
+      this.apartmentId = this.route.snapshot.paramMap.get('id');
 
       console.log("Apartment ID: ", this.apartmentId);
   }

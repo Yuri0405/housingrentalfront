@@ -5,6 +5,7 @@ import { LoginComponent } from './login/login.component';
 import { SearchComponent } from './search/search.component';
 import { ApartmentDetailsComponent } from './apartment-details/apartment-details.component';
 import { BookingFormComponent } from './booking-form/booking-form.component';
+import { ConfirmationComponent } from './confirmation/confirmation.component';
 
 export const routes: Routes = [
   { path: '', component: RecomendationsComponent }, // Головна сторінка
@@ -13,4 +14,5 @@ export const routes: Routes = [
   { path: 'search', component: SearchComponent }, // Пошук
   { path: 'apartment/:id', component: ApartmentDetailsComponent },
   { path: 'booking/:id', component: BookingFormComponent },
+  { path: 'confirmation', component: ConfirmationComponent }
 ];
